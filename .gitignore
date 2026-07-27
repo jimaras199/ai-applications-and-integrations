@@ -23,6 +23,18 @@ htmlcov/
 # VS Code
 .vscode/
 
+# Azure Functions local settings and generated files
+**/local.settings.json
+**/.python_packages/
+**/bin/
+**/obj/
+
+# Azurite local storage artifacts
+AzuriteConfig
+__blobstorage__/
+__queuestorage__/
+__azurite_db_*.json
+
 # Operating-system files
 .DS_Store
 Thumbs.db
