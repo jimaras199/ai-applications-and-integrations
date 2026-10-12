@@ -91,3 +91,20 @@ OPENAI_API_KEY
 Configure it in the Azure portal under the Function App's environment variables or application settings.
 
 Local settings are not automatically deployed to Azure.
+
+## Security Considerations
+
+The HTTP endpoint was implemented using anonymous authentication for demonstration purposes.
+
+Each successful request can trigger a billable OpenAI API call. Consequently, the implementation is not recommended for unrestricted public deployment without additional security controls.
+
+For production use, consider:
+
+- Function-level authentication or another authentication mechanism
+- Request rate limiting
+- API usage monitoring and cost controls
+- Secure management of credentials
+
+## Maintenance
+
+This project is no longer actively developed. Its source code and documentation remain available as a demonstration of integrating the OpenAI API with Azure Functions.
